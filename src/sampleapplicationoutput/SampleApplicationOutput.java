@@ -18,6 +18,31 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
     public SampleApplicationOutput() {
         initComponents();
     }
+     public double inchesToCentimetres(double value) {
+          return(value* 2.54);
+     }
+     /**
+      * 
+      */
+     public double feetToCentimetres(double value)  {
+              
+        return (value * 30);
+       
+         
+     }
+     /**
+      * 
+      */
+     public double yardsToMetres(double value)  {
+       return( value * 0.91);
+         
+     }
+     /**
+      * 
+      */
+     public double  milesToKilmetres(double value)  {
+        return( value * 1.6);
+     }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -159,24 +184,22 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int value,cent,metres,kilometres, choice;
+        int choice;
+        double value;
         choice = Integer.parseInt(jTextField1.getText());
-        value = Integer.parseInt(jTextField2.getText());
+        value = Double.parseDouble(jTextField2.getText());
         if(choice==1){
-                cent = (int)(value* 2.54);
-                jLabel8.setText(value + " inches = "+Integer.toString(cent)+" centimetres");
+               jLabel8.setText(value +" feet = "+inchesToCentimetres(value)+" centimetres");
         }
         else if(choice ==2){
-                cent =(int)( value * 30);
-                jLabel8.setText(value +" feet = "+Integer.toString(cent)+" centimetres");
+                
+                 jLabel8.setText(value +" feet = "+feetToCentimetres(value)+" centimetres");
         }
         else if (choice ==3){
-                metres =(int) ( value * 0.91);
-                jLabel8.setText(value +" yards = "+Integer.toString(metres)+" metres");
+                 jLabel8.setText(value +" yards = "+yardsToMetres(value)+" metres");
         }
         else if(choice == 4){
-                kilometres =(int)( value * 1.6);
-                jLabel8.setText(value +" miles = "+Integer.toString(kilometres)+" kilometres");
+                 jLabel8.setText(value +" miles = "+milesToKilmetres(value)+" kilometres");
                 
             
         }
@@ -232,4 +255,8 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    private void InchesToCentimetres() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
