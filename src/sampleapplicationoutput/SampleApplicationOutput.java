@@ -18,11 +18,18 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
     public SampleApplicationOutput() {
         initComponents();
     }
+    /**
+     *Creates new form inchesToCentimetres
+     * @param value - double of the inches
+     * @return the centimetres conversion
+     */
      public double inchesToCentimetres(double value) {
           return(value* 2.54);
      }
      /**
-      * Creates new form inchesToCentimetres
+      * Creates new form feetToCentimetres 
+      * @param value - double of the feet
+      * @return the metres conversion
       */
      public double feetToCentimetres(double value)  {
               
@@ -31,21 +38,22 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
          
      }
      /**
-      *Creates new form feetToCentimetres 
+      *Creates new form yardsToMetres
+      * @param value - double of the yards
+      * @return the metres conversion // or Pre and Post conditions
       */
      public double yardsToMetres(double value)  {
        return( value * 0.91);
          
      }
      /**
-      * Creates new form yardsTOMetres
+      * Creates new form milesTokilmetres
+      * @param value - double of the values
+      * @return the metres conversion
       */
      public double  milesToKilmetres(double value)  {
         return( value * 1.6);
      }
-    /**
-     * Creates new form milesTokilmetres
-     */
 
     /**
      * This method is called from within the constructor to initialize the form.
