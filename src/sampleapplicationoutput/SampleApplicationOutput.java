@@ -24,7 +24,9 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
      * @return the centimetres conversion
      */
      public double inchesToCentimetres(double value) {
-          return(value* 2.54);
+         double centimetres;
+         centimetres = value * 2.54
+          return(centimetres)
      }
      /**
       * Creates new form feetToCentimetres 
@@ -32,8 +34,9 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
       * @return the metres conversion
       */
      public double feetToCentimetres(double value)  {
-              
-        return (value * 30);
+        double centimetres;
+         centimetres = value * 30
+        return (centimetres);
        
          
      }
@@ -43,8 +46,9 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
       * @return the metres conversion // or Pre and Post conditions
       */
      public double yardsToMetres(double value)  {
-       return( value * 0.91);
-         
+         double metres;
+         metres = value * 0.91;
+         return(metres);                 
      }
      /**
       * Creates new form milesTokilmetres
@@ -52,7 +56,9 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
       * @return the metres conversion
       */
      public double  milesToKilmetres(double value)  {
-        return( value * 1.6);
+         double kilometres;
+         kilometres = value * 1.6;
+         return(kilometres);
      }
 
     /**
