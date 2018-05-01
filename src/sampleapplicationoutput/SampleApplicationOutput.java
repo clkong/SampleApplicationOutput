@@ -22,7 +22,7 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
           return(value* 2.54);
      }
      /**
-      * 
+      * Creates new form inchesToCentimetres
       */
      public double feetToCentimetres(double value)  {
               
@@ -31,18 +31,21 @@ public class SampleApplicationOutput extends javax.swing.JFrame {
          
      }
      /**
-      * 
+      *Creates new form feetToCentimetres 
       */
      public double yardsToMetres(double value)  {
        return( value * 0.91);
          
      }
      /**
-      * 
+      * Creates new form yardsTOMetres
       */
      public double  milesToKilmetres(double value)  {
         return( value * 1.6);
      }
+    /**
+     * Creates new form milesTokilmetres
+     */
 
     /**
      * This method is called from within the constructor to initialize the form.
